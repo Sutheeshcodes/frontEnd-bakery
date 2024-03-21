@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Products</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!--  paste ur own font awesome kit link here  -->
+    <script src="https://kit.fontawesome.com/3a9d3c2afa.js" crossorigin="anonymous"></script>
+
+    <!--Product Styling-->
+    <link rel="stylesheet" href="product.css">
+</head>
+
+<body>
+
+    <!--  < ---------navbar--------->
+   
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top" style="box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;color: black;" >
+        <div class="container-fluid">
+
+             <!--   side bar  here -->
+
+            <a class="navbar-brand" href="#" style="color: white;"><i class="fa-solid fa-bars"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 30px;">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="home.html" style="color: white;">Home <i class="fa-solid fa-house"></i></a>
+                    </li>
+                    
+                     <!--   page for cart comes here -->
+
+                    <li class="nav-item me-2"  style="margin-left: 30px;">
+                      <a class="nav-link"> <i class="fa-solid fa-cart-shopping" style="color: white;"></i></a>
+                    </li>
+
+                     <!--   page for products comes here -->
+
+                    <li class="nav-item me-2"  style="margin-left: 30px;">
+                        <a  class="nav-link" href="product.html" style="color: white;">Products</i></a>
+                    </li>
+                </ul>
+
+              <!--   logo comes here -->
+                <div style="position: fixed;left: 400px;top: 10px;">
+               <ul class="nav-item me-2 mb-3"  >
+                    <a class="nav-link" href="home.html">
+                    <p style="color: white;font-family: sherif;font-size: x-large;
+                    font-weight: bolder;">U<img src="logo.png" alt="">B</p>  
+                    </a>
+                </ul> 
+            </div>
+                <!-- logo ends here -->
+
+              <!--   search bar here -->
+                <form class="d-flex mx-auto" role="search" style="position: fixed;right: 400px;" >
+                    <input class="form-control me-2" type="search" placeholder="Search Product" aria-label="Search ">
+                    <button class="btn btn-outline-light " type="submit" id="serach">Search</button>
+                </form>
+
+           <!--      dropdown menu -->
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="position: fixed;right:300px;">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" style="color: white;"><i class="fa-solid fa-circle-info"></i></a>
+                        <ul class="dropdown-menu" style="color: white;">
+                            <li><a class="dropdown-item" href="#">Feedbacks</a></li>
+                            <li><a class="dropdown-item" href="#">Complaints</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Help center</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- user login -->
+                    <li class="nav-item"  style="position: fixed; right:50px;">
+                        <a class="nav-link disabled" style="color: white;"><i class="fa-solid fa-user"></i> Login</a>
+                    </li>
+
+                    <!-- contact page  -->
+                    <li class="nav-item"  style="position: fixed; right: 150px;">
+                        <a class="nav-link disabled" style="color: white;">Contact US</i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!--         nav bar completed here -->
+
+
+    <!--product title section starts-->
+    <section class="product" id="product">
+        <div class="productcontent">
+            <h2>Sweet treats made with <span>love</span></h2>
+            <p>Oven magic, taste bud bliss</p>
+            <div class="product-btn">
+                <a href="#">Get Yours Now</a>
+            </div>
+        </div>
+    </section>
+    <!--product title section ends-->
+
+
+    <!--product list section starts-->
+    <section class="product1" id="product1">
+        <div class="heading">
+            <h2>Our Exclusive Products</h2>
+        </div>
+
+        <!--Brownie Section-->
+        <div class="subheading">
+            <h3>Brownies</h3>
+        </div>
+
+        <!--    product list in body starts here  -->
+
+
+        <div class="swiper parent" > <!-- styling is in head tag -->
+            <div class="swiper-wrapper">
+                <!--Product 1-->
+                <div class="swiper-slide div1">
+                    <div class="img">
+                        <img src="b1.jpg" alt="">
+                    </div>
+                    <div class="content"> <!--product details-->
+                        <h3>Chocolate Brownie</h3>
+                        <p>price</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-outline-dark me-2" type="submit"><i class="fa-solid fa-heart"></i></button>
+                        <button class="btn btn-outline-dark me-2" type="submit">Order</button>
+                        <button class="btn btn-outline-dark me-2" type="submit"><i class="fa-solid fa-cart-plus"></i></button>
+                      </div>
+                    </div>
+                </div>
+
+                <!--Product 2-->
+                <div class="swiper-slide div1">
+                    <div class="img">
+                        <img src="b1.jpg" alt="">
+                    </div>
+                    <div class="content"> <!--product details-->
+                        <h3>Chocolate Brownie</h3>
+                        <p>price</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-heart"></i></button>
+                        <button class="btn btn-outline-dark me-2" type="submit">Order </button>
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Product 3-->
+                <div class="swiper-slide div1">
+                    <div class="img">
+                        <img src="b1.jpg" alt="">
+                    </div>
+                    <div class="content"> <!--product details-->
+                        <h3>Chocolate Brownie</h3>
+                        <p>price</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-heart"></i></button>
+                        <button class="btn btn-outline-dark me-2" type="submit">Order</button>
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Product 4-->
+                <div class="swiper-slide div1">
+                    <div class="img">
+                        <img src="b1.jpg" alt="">
+                    </div>
+                    <div class="content"> <!--product details-->
+                        <h3>Walnut Brownie</h3>
+                        <p>price</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-heart"></i></button>
+                        <button class="btn btn-outline-dark me-2" type="submit">Order</button>
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Product 5-->
+                <div class="swiper-slide div1">
+                    <div class="img">
+                        <img src="b1.jpg" alt="">
+                    </div>
+                    <div class="content"> <!--product details-->
+                        <h3>Walnut Brownie</h3>
+                        <p>price</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-heart"></i></button>
+                        <button class="btn btn-outline-dark me-2" type="submit">Order</button>
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Product 6-->
+                <div class="swiper-slide div1">
+                    <div class="img">
+                        <img src="b1.jpg" alt="">
+                    </div>
+                    <div class="content"> <!--product details-->
+                        <h3>Caramel Brownie</h3>
+                        <p>price</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-heart"></i></button>
+                        <button class="btn btn-outline-dark me-2" type="submit">Order</button>
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-cart-plus"></i></button>
+                                </div>
+
+                    </div>
+                </div>
+
+                <!--Product 7-->
+                <div class="swiper-slide div1">
+                    <div class="img">
+                        <img src="b1.jpg" alt="">
+                    </div>
+                    <div class="content"> <!--product details-->
+                        <h3>Caramel Brownie</h3>
+                        <p>price</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-heart"></i></button>
+                        <button class="btn btn-outline-dark me-2" type="submit">Order</button>
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Product 8-->
+                <div class="swiper-slide div1">
+                    <div class="img">
+                        <img src="b1.jpg" alt="">
+                    </div>
+                    <div class="content"> <!--product details-->
+                        <h3>Caramel Brownie</h3>
+                        <p>price</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-heart"></i></button>
+                        <button class="btn btn-outline-dark me-2" type="submit">Order</button>
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+          <!--Cake Section-->
+          <div class="subheading">
+            <h3>Cakes</h3>
+        </div>
+
+        <!--    product list in body starts here  -->
+
+
+        <div class="swiper parent"> <!-- styling is in head tag -->
+            <div class="swiper-wrapper">
+                <!--Product 1-->
+                <div class="swiper-slide div1">
+                    <div class="img">
+                        <img src="b1.jpg" alt="">
+                    </div>
+                    <div class="content"> <!--product details-->
+                        <h3>Chocolate Cake</h3>
+                        <p>price</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-heart"></i></button>
+                        <button class="btn btn-outline-dark me-2" type="submit">Order</button>
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-cart-plus"></i></button>
+                         </div>
+                    </div>
+                </div>
+
+                <!--Product 2-->
+                <div class="swiper-slide div1">
+                    <div class="img">
+                        <img src="b1.jpg" alt="">
+                    </div>
+                    <div class="content"> <!--product details-->
+                        <h3>Chocolate Cake</h3>
+                        <p>price</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-heart"></i></button>
+                        <button class="btn btn-outline-dark me-2" type="submit">Order</button>
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Product 3-->
+                <div class="swiper-slide div1">
+                    <div class="img">
+                        <img src="b1.jpg" alt="">
+                    </div>
+                    <div class="content"> <!--product details-->
+                        <h3>Carrot Cake</h3>
+                        <p>price</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-heart"></i></button>
+                        <button class="btn btn-outline-dark me-2" type="submit">Order</button>
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-cart-plus"></i></button>
+                            </div>
+
+                    </div>
+                </div>
+
+                <!--Product 4-->
+                <div class="swiper-slide div1">
+                    <div class="img">
+                        <img src="b1.jpg" alt="">
+                    </div>
+                    <div class="content"> <!--product details-->
+                        <h3>Carrot Cake</h3>
+                        <p>price</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-heart"></i></button>
+                        <button class="btn btn-outline-dark me-2" type="submit">Order</button>
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Product 5-->
+                <div class="swiper-slide div1">
+                    <div class="img">
+                        <img src="b1.jpg" alt="">
+                    </div>
+                    <div class="content"> <!--product details-->
+                        <h3>Carrot Cake</h3>
+                        <p>price</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-heart"></i></button>
+                        <button class="btn btn-outline-dark me-2" type="submit">Order</button>
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Product 6-->
+                <div class="swiper-slide div1">
+                    <div class="img">
+                        <img src="b1.jpg" alt="">
+                    </div>
+                    <div class="content"> <!--product details-->
+                        <h3>Cookie Cake</h3>
+                        <p>price</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-heart"></i></button>
+                        <button class="btn btn-outline-dark me-2" type="submit">Order</button>
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Product 7-->
+                <div class="swiper-slide div1">
+                    <div class="img">
+                        <img src="c3.jpg" alt="">
+                    </div>
+                    <div class="content"> <!--product details-->
+                        <h3>Cookie Cake</h3>
+                        <p>price</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-heart"></i></button>
+                        <button class="btn btn-outline-dark me-2" type="submit">Order</button>
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!--Product 8-->
+                <div class="swiper-slide div1">
+                    <div class="img">
+                        <img src="b1.jpg" alt="">
+                    </div>
+                    <div class="content"> <!--product details-->
+                        <h3>Cookie Cake</h3>
+                        <p>price</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-heart"></i></button>
+                        <button class="btn btn-outline-dark me-2" type="submit">Order</button>
+                        <button class="btn btn-outline-dark me-2" type="submit"><i
+                                class="fa-solid fa-cart-plus"></i></button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+<!-- Swiper JS link-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<!-- Initialize Swiper -->
+<script>
+    var swiper = new Swiper(".parent", {
+      spaceBetween: 30,
+     // centeredSlides:true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+        },
+        768: {
+          slidesPerView: 4,
+        },
+        1024: {
+          slidesPerView: 5,
+        },
+      },
+    });
+  </script>
+
+</body>
+
+</html>
